@@ -1,0 +1,489 @@
+/*Header*/
+.Header{
+  text-align: end;
+  margin-top: 13px;
+  margin-right: 96px;
+}
+
+.Header a{
+  text-decoration: none;
+  color: #359121;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 25px;
+}
+/*Banner*/
+.Bann{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.Bann a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+
+}
+/*Navigation Bar*/
+.nav{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.nav a{
+  text-decoration: none;
+  margin-left: 70px;
+  margin-inline-end: 20px;
+  padding-left: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav a:hover{
+  color:#359121;
+}
+
+.nav button{
+  margin-left: 1px;
+  padding: 8px;
+  border: none;
+  background-color: #359121;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 95px;
+
+}
+
+.nav button:hover{
+  background-color: #359121;
+}
+/*slider image*/
+/* Slider Section Styling */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider .slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.navigation button {
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+}
+/*Dropdown menu*/
+/* 🔷 Navbar layout and appearance */
+.nav-bar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-bar li {
+  position: relative;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  padding: 16px 20px;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* 🔷 Dropdown hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color:  #359121;
+  border: none;
+  border-radius: 8px;
+  min-width: 220px;
+  z-index: 999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🔷 List items inside dropdown */
+.dropdown-menu li {
+  border-bottom: 1px solid;
+  display: flex;
+  text-align: center;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  color: #f0f0f0;
+}
+
+.dropdown-menu li a:hover {
+  color: black;
+}
+
+/* 🔷 Show dropdown when active class is added */
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+/* 🔰 Subsection layout */
+.Sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #f4f9f4; /* Light farming green tone */
+}
+
+/* 🔹 Video container */
+.Sub .Video iframe {
+  max-width: 100%;
+  border: 5px solid #359121;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Text content */
+.Sub .text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.Sub .text h1 {
+  font-size: 2.5rem;
+  color: #359121;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 10px;
+}
+
+.Sub .text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 🟢 Optional responsiveness */
+@media (max-width: 768px) {
+  .Sub {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .Sub .text {
+    text-align: center;
+  }
+}
+
+/* 🔰 Features Section Container */
+.features {
+  background-color: #f8fcf7; /* Subtle light green tone */
+  padding: 60px 20px;
+}
+
+/* 🔹 Grid layout for feature boxes */
+.features-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔹 Individual Feature Box */
+.features-Grid .feature-box {
+  background-color: #ffffff;
+  border: 2px solid #359121;;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.features-Grid .feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Feature Title */
+.features-Grid .feature-box h3 {
+  color: #359121;
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+/* 🔹 Feature Description */
+.features-Grid .feature-box p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Optional: Feature icons */
+.features-Grid .feature-box img {
+  width: 60px;
+  height: 60px;
+}
+/* 🏞️ Full Background Image Section */
+.image {
+  background-image: url('img/farm-bg.jpg'); /* 🔁 Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 🔥 Parallax scroll effect */
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* Optional: Dark overlay filter for contrast */
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 50, 0, 0.5); /* Deep green overlay */
+  z-index: 1;
+}
+
+/* 🌾 Text Styling */
+.image .text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.image .text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* Blog Section Styling */
+.blog {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.blog-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-new .blog-post {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-new .blog-post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-new .blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-new .blog-post .post-info {
+  padding: 20px;
+}
+
+.blog-new .blog-post .post-info h3 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.blog-new .blog-post .post-info p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.blog-new .blog-post .post-info .post-date {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.blog-new .blog-post .post-info .post-date::before {
+  content: "Posted on ";
+}
+
+.blog-new .blog-post .read-more {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #359121;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.blog-new .blog-post .read-more:hover {
+  color: #359121;
+}
+
+/* Demo Section Styling */
+.demo {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.request.demo {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.request.demo p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.request.demo button {
+  font-size: 1.1rem;
+  background-color: #359121;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.request.demo button:hover {
+  background-color: #359121;
+}
+
+/* Footer Section Styling */
+.footer {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  color: white;
+  border: 0px solid;
+  background-color: #212a32;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: #359121;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column li,
+.footer-column a {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+  color: #359121;
+  text-decoration: underline;
+}

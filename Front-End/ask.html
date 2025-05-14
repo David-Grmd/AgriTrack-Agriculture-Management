@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ask.css">
+  <title>
+    AgriTrack-Agriculture Management
+  </title>
+  <link rel="icon" type="image/x-icon" href="leaf_fluttering_in_wind_48px.png">
+</head>
+<body>
+  <script src="scripts.js"></script>
+  <!--Header-->
+  <div class="Header">
+    <header>
+    <a href="#">Contact Us</a>
+    <a href="#">About Us</a>
+    </header>
+  </div>
+  
+  <!--Banner-->
+  <div class="Bann">
+  <banner>
+    <img src="leaf_fluttering_in_wind_48px.png" alt="icon">
+   <a href="#">AGRITRACK</a>
+  </banner>
+  </div>
+  <!--Navigation Bar-->
+  <div class="nav">
+  <nav>
+    <div class="nav-bar">
+    <li class="dropdown">
+    <a href="Home.html">HOME</a>
+    </li>
+   <li class="dropdown">
+       <a href="Resources.html" class="Res">RESOURCES</a>
+     <ul class="dropdown-menu">
+      <li><a href="#">Guides & Tutorials</a></li>
+      <li><a href="#">Agriculture News</a></li>
+     </ul>
+   </li> 
+    <li class="dropdown">
+      <a href="Products.html" class="Pro">PRODUCTS</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">CropTracker</a></li>
+        <li><a href="#">Animal Health Monitor</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+    <a href="Support.html" class="Sup">SUPPORT</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">feedback</a></li>
+      <li><a href="#">Ask a Specialist</a></li>
+    </ul>
+    </li>
+    <a href="Login.html">
+    <button>LOGIN IN</button>
+    </a>
+  </nav>
+  </div>
+  </div>
+  <section class="specialist-section">
+    <h1>👨‍🌾 Ask a Farming Specialist</h1>
+    <p>Need expert help on crop issues, soil treatment, or livestock care? Submit your question below and get advice from our certified agricultural specialists.</p>
+    <form class="specialist-form">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="topic">Question Topic</label>
+      <select id="topic" name="topic">
+        <option value="crop">Crop Management</option>
+        <option value="soil">Soil Treatment</option>
+        <option value="animal">Animal Health</option>
+        <option value="tech">AgriTech Tools</option>
+      </select>
+
+      <label for="question">Your Question</label>
+      <textarea id="question" name="question" placeholder="Type your detailed question..." required></textarea>
+
+      <button type="submit">Submit Question</button>
+    </form>
+  </section>
+</body>
+</html>

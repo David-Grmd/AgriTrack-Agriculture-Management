@@ -1,0 +1,32 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+.hero-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(47, 250, 25, 0.5), rgba(112, 248, 117, 0.5));
+
+}
+.hero{
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.btn{
+  margin-top: 34px;
+  padding: 0.8rem 1.5rem;
+  background-color: #3cfb3c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: #1bb803;
+}

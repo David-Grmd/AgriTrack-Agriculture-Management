@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f6f4;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.specialist-section {
+  max-width: 850px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.specialist-section h1 {
+  color: rgb(113, 186, 3);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.specialist-section p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.specialist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specialist-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.specialist-form input,
+.specialist-form select,
+.specialist-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+.specialist-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.specialist-form button {
+  background-color: rgb(113, 186, 3);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.specialist-form button:hover {
+  background-color: rgb(95, 156, 4);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .specialist-section {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+}
